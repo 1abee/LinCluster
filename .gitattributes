@@ -13,7 +13,7 @@
 *.yaml  text
 *.xml   text
 
-# Скрипты — всегда LF (важно для Linux/CI)
+# Скрипты — всегда LF
 *.sh    text eol=lf
 *.bash  text eol=lf
 
