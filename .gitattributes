@@ -1,0 +1,34 @@
+# Автоматически определять текстовые файлы и нормализовать в LF в репозитории
+* text=auto
+
+# Явно указать текстовые файлы
+*.txt   text
+*.md    text
+*.html  text
+*.css   text
+*.js    text
+*.ts    text
+*.json  text
+*.yml   text
+*.yaml  text
+*.xml   text
+
+# Скрипты — всегда LF (важно для Linux/CI)
+*.sh    text eol=lf
+*.bash  text eol=lf
+
+# Windows-скрипты — всегда CRLF
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# Бинарные файлы — Git не должен их трогать
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.zip   binary
+*.exe   binary
+*.dll   binary
